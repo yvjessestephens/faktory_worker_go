@@ -43,10 +43,10 @@ func heartbeat(mgr *Manager) {
 			// we don't care about errors, assume any network
 			// errors will heal eventually
 			err := mgr.with(func(c *faktory.Client) error {
-				mgr.Logger.Info("Sending Faktory heartbeat >> %s", mgr.state)
+				mgr.Logger.Info(fmt.Sprintf("Sending Faktory heartbeat >> %s", mgr.state))
 				data, err := c.Beat(mgr.state)
 				if err != nil {
-					mgr.Logger.Warn("Received Faktory heartbeat err >> %s", err.Error())
+					mgr.Logger.Warn(fmt.Sprintf("Received Faktory heartbeat err >> %s", err.Error()))
 				}
 				//if err != nil && strings.Contains(err.Error(), "Unknown worker") {
 				if err != nil && strings.Contains(err.Error(), "unknown worker") {

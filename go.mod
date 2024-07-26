@@ -1,4 +1,3 @@
-#module github.com/contribsys/faktory_worker_go
 module github.com/yvjessestephens/faktory_worker_go
 
 go 1.21

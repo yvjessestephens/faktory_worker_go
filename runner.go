@@ -43,8 +43,13 @@ func heartbeat(mgr *Manager) {
 			// we don't care about errors, assume any network
 			// errors will heal eventually
 			err := mgr.with(func(c *faktory.Client) error {
+				mgr.Logger.Info("Sending Faktory heartbeat >> %s", mgr.state)
 				data, err := c.Beat(mgr.state)
-				if err != nil && strings.Contains(err.Error(), "Unknown worker") {
+				if err != nil {
+					mgr.Logger.Warn("Received Faktory heartbeat err >> %s", err.Error())
+				}
+				//if err != nil && strings.Contains(err.Error(), "Unknown worker") {
+				if err != nil && strings.Contains(err.Error(), "unknown worker") {
 					// If our heartbeat expires, we must restart and re-authenticate.
 					// Use a signal so we can unwind and shutdown cleanly.
 					mgr.Logger.Warn("Faktory heartbeat has expired, shutting down...")

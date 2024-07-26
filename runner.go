@@ -105,6 +105,7 @@ func process(ctx context.Context, mgr *Manager, idx int) {
 
 		err := processOne(ctx, mgr)
 		if err != nil {
+			mgr.Logger.Debug("runner.process()")
 			mgr.Logger.Debug(err)
 			if _, ok := err.(*NoHandlerError); !ok {
 				// if we don't know how to process this jobtype,

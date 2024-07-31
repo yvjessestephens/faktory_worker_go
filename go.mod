@@ -4,7 +4,7 @@ go 1.22
 
 require (
 	github.com/stretchr/testify v1.9.0
-	github.com/yvjessestephens/faktory v0.1.0
+	github.com/yvjessestephens/faktory v0.1.1
 )
 
 require (

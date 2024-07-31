@@ -3,7 +3,7 @@ package faktory_worker
 import (
 	"context"
 
-	faktory "github.com/contribsys/faktory/client"
+	faktory "github.com/yvjessestephens/faktory/client"
 )
 
 type Handler func(ctx context.Context, job *faktory.Job) error

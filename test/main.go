@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	faktory "github.com/contribsys/faktory/client"
+	faktory "github.com/yvjessestephens/faktory/client"
 	worker "github.com/yvjessestephens/faktory_worker_go"
 )
 

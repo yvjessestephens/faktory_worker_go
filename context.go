@@ -6,7 +6,7 @@ import (
 	"log"
 	"time"
 
-	faktory "github.com/contribsys/faktory/client"
+	faktory "github.com/yvjessestephens/faktory/client"
 )
 
 // internal keys for context value storage

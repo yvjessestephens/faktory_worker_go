@@ -9,7 +9,7 @@ import (
 	"sync"
 	"time"
 
-	faktory "github.com/contribsys/faktory/client"
+	faktory "github.com/yvjessestephens/faktory/client"
 )
 
 // Manager coordinates the processes for the worker.  It is responsible for

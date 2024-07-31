@@ -4,7 +4,7 @@ import (
 	"context"
 	"encoding/json"
 
-	faktory "github.com/contribsys/faktory/client"
+	faktory "github.com/yvjessestephens/faktory/client"
 )
 
 type PerformExecutor interface {

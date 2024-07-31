@@ -13,7 +13,7 @@ import (
 	"syscall"
 	"time"
 
-	faktory "github.com/contribsys/faktory/client"
+	faktory "github.com/yvjessestephens/faktory/client"
 )
 
 type lifecycleEventType int

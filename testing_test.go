@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"testing"
 
-	faktory "github.com/contribsys/faktory/client"
 	"github.com/stretchr/testify/assert"
+	faktory "github.com/yvjessestephens/faktory/client"
 )
 
 var (

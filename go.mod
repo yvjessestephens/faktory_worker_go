@@ -1,10 +1,10 @@
 module github.com/yvjessestephens/faktory_worker_go
 
-go 1.21
+go 1.22
 
 require (
-	github.com/contribsys/faktory v1.8.0
-	github.com/stretchr/testify v1.8.4
+	github.com/stretchr/testify v1.9.0
+	github.com/yvjessestephens/faktory v0.1.0
 )
 
 require (
